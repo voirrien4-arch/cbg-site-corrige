@@ -1,0 +1,23 @@
+CBG Miniapp — archive complète
+Fichiers inclus : 19
+Générée le : 2026-08-31T16:10:39.629Z
+
+index.html	57078 octets
+styles.css	53295 octets
+main.js	6036 octets
+ui.js	19466 octets
+content.js	10370 octets
+official-data.js	24664 octets
+assistant.js	4026 octets
+gemini.js	1748 octets
+language.js	1906 octets
+source-download.js	8618 octets
+i18n.js	2612 octets
+content-manifest.json	3508 octets
+miniapp.i18n.json	42 octets
+locales/fr.json	18238 octets
+locales/en.json	14783 octets
+locales/es-419.json	15952 octets
+locales/pt-BR.json	15848 octets
+locales/ar.json	18764 octets
+locales/zh-Hans.json	13376 octets

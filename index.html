@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr"><head><link rel="preload" href="_miniapp/i18n/manifest.json" as="fetch" type="application/json" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0755a0">
+  <meta name="description" content="CBG — Compagnie des Bauxites de Guinée. Explorez une chaîne industrielle intégrée, de Sangarédi à Kamsar et vers le monde.">
+  <meta property="og:title" content="CBG | De la bauxite guinéenne vers le monde">
+  <meta property="og:description" content="Mine, rail, installations industrielles et port : découvrez la chaîne CBG.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://cbg-guinee.com/">
+  <title>CBG | Compagnie des Bauxites de Guinée</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true" style="transform: scaleX(0.999967);"></div>
+  <header class="site-header scrolled" id="siteHeader">
+    <a class="brand" href="#accueil" data-i18n-aria-label="brand.home" aria-label="CBG, retour à l'accueil">
+      <img class="brand-logo" src="https://cbg-guinee.com/wp-content/uploads/2025/11/logo-CBG-FINAL.png" data-i18n-alt="brand.alt" alt="CBG — Compagnie des Bauxites de Guinée">
+    </a>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="#la-cbg" data-i18n="nav.about">La CBG</a>
+      <a href="#operations" data-i18n="nav.operations">Nos opérations</a>
+      <a href="#projets" data-i18n="nav.projects">Nos projets</a>
+      <a href="#engagements" data-i18n="nav.commitments">Nos engagements</a>
+      <a href="#actualites" data-i18n="nav.news">Actualités</a>
+      <a href="#publications" data-i18n="nav.publications">Publications</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-picker" for="languageSelect"><span class="sr-only" data-i18n="language.label">Langue</span><select id="languageSelect" data-i18n-aria-label="language.label" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="es-419">ES</option><option value="pt-BR">PT</option><option value="ar">AR</option><option value="zh-Hans">中文</option></select></label>
+      <button class="header-ai" id="aiOpenTop" type="button"><span data-i18n="assistant.button">CBG AI</span></button>
+      <a class="header-contact" href="#contact" data-i18n="nav.contact">Contact</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" data-i18n-aria-label="nav.openMenu" aria-label="Ouvrir le menu">Ouvrir le menu</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+      <div class="mobile-nav-head"><span data-i18n="mobile.menu">Navigation</span><span>CBG / 01</span></div>
+      <a href="#la-cbg" data-i18n="nav.about">La CBG</a>
+      <a href="#operations" data-i18n="nav.operations">Nos opérations</a>
+      <a href="#projets" data-i18n="nav.projects">Nos projets</a>
+      <a href="#engagements" data-i18n="nav.commitments">Nos engagements</a>
+      <a href="#actualites" data-i18n="nav.news">Actualités</a>
+      <a href="#carrieres" data-i18n="nav.careers">Carrières</a>
+      <a href="#publications" data-i18n="nav.publications">Publications</a>
+      <a href="#contenu-officiel" data-i18n="nav.content">Tout le contenu</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button class="mobile-ai" id="aiOpenMobile" type="button"><span data-i18n="assistant.button">CBG AI</span> <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil" aria-labelledby="heroTitle">
+      <div class="hero-media" role="img" data-i18n-aria-label="hero.imageAlt" aria-label="Opération industrielle de la Compagnie des Bauxites de Guinée" style="transform: scale(1.08) translateY(34px);"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-utility"><span data-i18n="hero.eyebrow">Compagnie des Bauxites de Guinée</span><span data-i18n="hero.location">GUINÉE / BOKÉ</span></div>
+        <div class="hero-center">
+          <div class="hero-copy-block">
+            <p class="kicker kicker-light"><span class="kicker-line"></span><span data-i18n="hero.kicker">Une chaîne industrielle intégrée</span></p>
+            <h1 id="heroTitle"><span data-i18n="hero.title">De la bauxite
+guinéenne vers le monde.</span></h1>
+            <p class="hero-short" data-i18n="hero.copy">Depuis Sangarédi, la CBG relie mine, rail, installations industrielles et port de Kamsar.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#operations"><span data-i18n="hero.operations">Voir nos opérations</span><b>↘</b></a><a class="button button-ghost" href="#la-cbg"><span data-i18n="hero.discover">Découvrir la CBG</span><b>→</b></a></div>
+          </div>
+          <div class="hero-side-note"><span class="side-number">01</span><span class="side-rule"></span><span data-i18n="hero.sideNote">Une présence industrielle
+en mouvement</span></div>
+        </div>
+        <div class="hero-footer"><span class="scroll-cue"><i></i><span data-i18n="hero.scroll">Faire défiler pour explorer</span></span><span class="hero-proof"><strong>18 279 755</strong><small data-i18n="hero.proofUnit">tonnes de bauxite produites en 2024</small></span><span class="hero-count">01 <b>/</b> 06</span></div>
+      </div>
+    </section>
+
+    <section class="intro-band" id="la-cbg" aria-labelledby="introTitle">
+      <div class="container intro-grid">
+        <div class="intro-title"><p class="kicker"><span class="kicker-index">01</span><span data-i18n="about.kicker">La CBG aujourd'hui</span></p><h2 id="introTitle"><span data-i18n="about.title">Une entreprise
+en mouvement.</span></h2></div>
+        <div class="intro-text"><p data-i18n="about.copy">Créée en 1963, la Compagnie des Bauxites de Guinée exploite les mines de Sangarédi et s’appuie sur une chaîne intégrée jusqu’au port de Kamsar. Cette plateforme raconte cette réalité par les lieux, les équipes et les preuves publiées.</p><a class="inline-link" href="#histoire"><span data-i18n="about.link">Parcourir notre histoire</span><b>↗</b></a></div>
+        <div class="intro-photo"><img src="https://cbg-guinee.com/wp-content/uploads/2025/06/DSC06022-scaled-1.jpg" data-i18n-alt="media.mineAlt" alt="Opération minière CBG dans la région de Boké" loading="eager"><span class="photo-label" data-i18n="media.mine">Sangarédi · opérations minières</span></div>
+        <div class="intro-stat"><strong>1963</strong><span data-i18n="about.founded">Année de création de la CBG</span><i></i></div>
+      </div>
+    </section>
+
+    <section class="numbers-section" aria-labelledby="numbersTitle">
+      <div class="container numbers-head"><div><p class="kicker kicker-blue"><span class="kicker-index">02</span><span data-i18n="metrics.kicker">Les repères de la chaîne</span></p><h2 id="numbersTitle"><span data-i18n="metrics.title">Des faits.
+Des sources.</span></h2></div><p data-i18n="metrics.note">Chaque valeur affichée est accompagnée de son année et de sa source publique.</p></div>
+      <div class="container metric-grid" id="metricGrid"><article class="metric-card reveal"><div class="metric-number"><strong class="metric-value" data-value="18279755" data-display="18 279 755">18 279 755</strong><span class="metric-unit">tonnes</span></div><h3>Production de bauxite</h3><p class="metric-note">Production mentionnée dans la chronologie officielle</p><div class="metric-foot"><span>2024</span><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="metric-card reveal"><div class="metric-number"><strong class="metric-value" data-value="132" data-display="132">132</strong><span class="metric-unit">km</span></div><h3>Ligne Sangarédi–Kamsar</h3><p class="metric-note">Longueur présentée sur la page officielle du chemin de fer</p><div class="metric-foot"><span>—</span><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="metric-card reveal"><div class="metric-number"><strong class="metric-value" data-value="3" data-display="3">3</strong><span class="metric-unit">% H₂O</span></div><h3>Humidité après séchage</h3><p class="metric-note">Taux indiqué pour la bauxite préparée à Kamsar</p><div class="metric-foot"><span>—</span><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="metric-card reveal"><div class="metric-number"><strong class="metric-value" data-value="60000" data-display="60 000">60 000</strong><span class="metric-unit">tonnes / navire</span></div><h3>Capacité d'accueil du quai</h3><p class="metric-note">Deux navires de cette capacité peuvent être accueillis simultanément</p><div class="metric-foot"><span>—</span><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article></div>
+    </section>
+
+    <section class="chain-section" id="operations" aria-labelledby="chainTitle">
+      <div class="chain-skyline" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="container chain-head"><p class="kicker kicker-light"><span class="kicker-index">03</span><span data-i18n="journey.kicker">L'expérience CBG</span></p><h2 id="chainTitle"><span data-i18n="journey.title">De la mine
+au monde.</span></h2><p data-i18n="journey.lead">Suivez le parcours de la bauxite sur une chaîne logistique intégrée, de Sangarédi aux installations de Kamsar et au-delà.</p></div>
+      <div class="container chain-experience">
+        <div class="chain-progress"><span class="progress-fill" id="chainProgress" style="width: 0%;"></span><span class="progress-node active"></span><span class="progress-node"></span><span class="progress-node"></span><span class="progress-node"></span><span class="progress-node"></span><span class="progress-node"></span></div>
+        <div class="journey-steps" id="chainMap" role="tablist" aria-label="Étapes de la chaîne industrielle"><button class="journey-step active" type="button" role="tab" aria-selected="true" data-step="sangaredi"><span class="journey-step-no">01</span><span class="journey-step-title">SANGARÉDI</span><span class="journey-step-label">Extraction</span></button><button class="journey-step" type="button" role="tab" aria-selected="false" data-step="rail"><span class="journey-step-no">02</span><span class="journey-step-title">CHEMIN DE FER</span><span class="journey-step-label">Acheminement</span></button><button class="journey-step" type="button" role="tab" aria-selected="false" data-step="kamsar"><span class="journey-step-no">03</span><span class="journey-step-title">KAMSAR</span><span class="journey-step-label">Installations</span></button><button class="journey-step" type="button" role="tab" aria-selected="false" data-step="stockage"><span class="journey-step-no">04</span><span class="journey-step-title">STOCKAGE</span><span class="journey-step-label">Préparation</span></button><button class="journey-step" type="button" role="tab" aria-selected="false" data-step="port"><span class="journey-step-no">05</span><span class="journey-step-title">PORT</span><span class="journey-step-label">Chargement</span></button><button class="journey-step" type="button" role="tab" aria-selected="false" data-step="monde"><span class="journey-step-no">06</span><span class="journey-step-title">MONDE</span><span class="journey-step-label">Exportation</span></button></div>
+        <div class="chain-stage" id="chainDetail" aria-live="polite"><div class="journey-image"><img src="https://cbg-guinee.com/wp-content/uploads/2025/06/DSC06022-scaled-1.jpg" alt="chain.mineTitle — CBG" loading="lazy"><span class="image-credit">Image publiée sur le site officiel CBG</span></div><div class="journey-copy"><span class="detail-eyebrow">Extraction</span><h3>chain.mineTitle</h3><p>Mise en exploitation en 1973, la mine de Sangarédi est le principal site extractif de la CBG. Le minerai y est extrait à ciel ouvert puis acheminé vers les installations de traitement.</p><div class="detail-actions"><div class="journey-fact"><span>Ce que dit la source</span><strong>Mise en exploitation : 1973</strong></div><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></div></div>
+      </div>
+    </section>
+
+    <section class="territory-section" aria-labelledby="territoryTitle">
+      <div class="container territory-layout"><div class="territory-copy"><p class="kicker kicker-blue"><span class="kicker-index">04</span><span data-i18n="map.kicker">Un territoire industriel</span></p><h2 id="territoryTitle"><span data-i18n="map.title">Deux pôles,
+un même flux.</span></h2><p data-i18n="map.copy">Une lecture schématique du corridor industriel présenté par la CBG : la mine de Sangarédi, le corridor ferroviaire et les installations de Kamsar.</p><p class="territory-note" data-i18n="map.disclaimer">Représentation éditoriale — non à l'échelle. Les coordonnées précises ne sont pas affichées sans validation officielle.</p></div><div class="territory-map" id="schematicMap"><div class="map-water"></div><div class="map-rings"></div><svg viewBox="0 0 620 440" role="img" data-i18n-aria-label="map.ariaLabel" aria-label="Carte schématique du corridor industriel CBG"><path class="guinea-shape" d="M170 38 288 18 411 69 498 130 526 230 480 336 354 401 240 368 145 403 93 329 30 270 75 188 54 105Z"></path><path class="map-route" d="M447 306 C365 278 330 245 291 221 S205 173 125 145"></path><path class="map-route-dash" d="M447 306 C365 278 330 245 291 221 S205 173 125 145"></path></svg><button class="map-pin pin-mine active" type="button" data-location="mine"><i></i><span data-i18n="map.minePin">Sangarédi</span></button><button class="map-pin pin-kamsar" type="button" data-location="kamsar"><i></i><span data-i18n="map.kamsarPin">Kamsar</span></button><div class="map-card" id="mapCard"><span class="map-card-eyebrow">Point d'opération</span><h3>Sangarédi</h3><p>Principal site extractif de la CBG, dans la région de Boké, au nord-ouest de la Guinée.</p><strong>Mine à ciel ouvert · depuis 1973</strong><button class="source-link" type="button" title="Ouvrir la référence interne">Découvrir ↗</button></div><span class="map-scale" data-i18n="map.scale">CORRIDOR FERROVIAIRE · 132 KM</span></div></div>
+    </section>
+
+    <section class="visual-operations" aria-labelledby="visualOperationsTitle"><div class="container visual-head"><div><p class="kicker kicker-blue"><span class="kicker-index">05</span><span data-i18n="gallery.kicker">Les opérations en images</span></p><h2 id="visualOperationsTitle"><span data-i18n="gallery.title">Une chaîne
+qui se voit.</span></h2></div><p data-i18n="gallery.lead">Chaque maillon compte : extraire, transporter, préparer, charger.</p></div><div class="container operation-cards" id="operationGrid"><article class="operation-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2025/06/DSC06022-scaled-1.jpg" alt="Mine de Sangarédi" loading="lazy"><div class="card-shade"></div><div class="operation-body"><span class="card-index">01</span><h3>Mine de Sangarédi</h3><p>Le point de départ de la chaîne bauxite, dans la région de Boké.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Découvrir ↗</button></div></article><article class="operation-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2025/12/Train-Voyageur-scaled-1.jpg" alt="Chemin de fer" loading="lazy"><div class="card-shade"></div><div class="operation-body"><span class="card-index">02</span><h3>Chemin de fer</h3><p>Le lien physique entre le bassin minier et les installations de Kamsar.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Découvrir ↗</button></div></article><article class="operation-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2025/11/slide-cbg-4.webp" alt="Usine de Kamsar" loading="lazy"><div class="card-shade"></div><div class="operation-body"><span class="card-index">03</span><h3>Usine de Kamsar</h3><p>Concassage, séchage, contrôle qualité et préparation avant le quai minéralier.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Découvrir ↗</button></div></article><article class="operation-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/05/image-article-01.webp" alt="Port de Kamsar" loading="lazy"><div class="card-shade"></div><div class="operation-body"><span class="card-index">04</span><h3>Port de Kamsar</h3><p>Le dernier maillon avant l'expédition de la bauxite vers les marchés internationaux.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Découvrir ↗</button></div></article></div></section>
+
+    <section class="history-section" id="histoire" aria-labelledby="historyTitle"><div class="container history-layout"><div class="history-sticky"><p class="kicker kicker-blue"><span class="kicker-index">06</span><span data-i18n="history.kicker">Une histoire documentée</span></p><h2 id="historyTitle"><span data-i18n="history.title">Plus de six
+décennies.</span></h2><p data-i18n="history.copy">Des jalons sélectionnés dans la chronologie publiée par la CBG, de la création de la compagnie aux opérations actuelles.</p><a class="button button-outline-blue" href="#contenu-officiel"><span data-i18n="history.cta">Explorer la chronologie</span><b>↓</b></a></div><div class="timeline" id="timeline"><article class="timeline-item reveal"><div class="timeline-year">1963</div><span class="timeline-dot"></span><div class="timeline-body"><h3>Création de la CBG</h3><p>La Compagnie des Bauxites de Guinée est créée le 1er octobre 1963 dans le cadre de la mise en valeur du potentiel bauxitique de la région de Boké.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="timeline-item reveal offset"><div class="timeline-year">1973</div><span class="timeline-dot"></span><div class="timeline-body"><h3>Premières opérations et exportation</h3><p>La ligne ferroviaire est achevée en janvier. Les opérations de broyage et de stockage commencent à Kamsar le 30 avril, puis la première exportation a lieu le 2 août 1973 à bord du Coronia.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="timeline-item reveal"><div class="timeline-year">2016–2024</div><span class="timeline-dot"></span><div class="timeline-body"><h3>Projet d'extension</h3><p>Le projet lancé en 2016 a renforcé les capacités minières, ferroviaires et portuaires. La page projet officielle indique un achèvement en 2024.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="timeline-item reveal offset"><div class="timeline-year">2024</div><span class="timeline-dot"></span><div class="timeline-body"><h3>Production publiée</h3><p>La chronologie publiée par la CBG mentionne une production de 18 279 755 tonnes de bauxite en 2024.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article><article class="timeline-item reveal"><div class="timeline-year">2025–2026</div><span class="timeline-dot"></span><div class="timeline-body"><h3>Qualité, environnement et sécurité</h3><p>La CBG annonce le maintien des certifications ISO 9001, ISO 14001 et ISO 45001 après un audit AFNOR, ainsi que sa certification ASI dans ses communications officielles.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Source officielle ↗</button></div></article></div></div></section>
+
+    <section class="projects-section" id="projets" aria-labelledby="projectsTitle"><div class="container projects-layout"><div class="projects-intro"><p class="kicker kicker-light"><span class="kicker-index">07</span><span data-i18n="projects.kicker">Projets &amp; transformation</span></p><h2 id="projectsTitle"><span data-i18n="projects.title">Préparer
+la suite.</span></h2><p data-i18n="projects.copy">Les projets sont présentés avec leur statut et leur source, pour distinguer ce qui est achevé de ce qui est encore en développement.</p></div><div class="project-grid" id="projectGrid"><article class="project-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/08/1.webp" alt="Projet d'extension" loading="lazy"><div class="project-meta"><span>Projet achevé selon la source</span><span>2016–2024</span></div><div class="project-body"><h3>Projet d'extension</h3><p>Extension des opérations minières, modernisation des infrastructures ferroviaires et portuaires et nouvelles aires de stockage et de traitement.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article><article class="project-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2025/12/Train-Voyageur-scaled-1.jpg" alt="Projet Multi-User du Chemin de Fer de Boké" loading="lazy"><div class="project-meta"><span>Projet présenté par la CBG</span><span>Depuis 2015</span></div><div class="project-body"><h3>Projet Multi-User du Chemin de Fer de Boké</h3><p>Partenariat entre l'ANAIM, la CBG, GAC et COBAD pour une infrastructure ferroviaire partagée, avec une gouvernance organisée autour d'un Comité Technique et d'un Comité des Utilisateurs.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article><article class="project-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/08/1.webp" alt="Projet de raffinerie" loading="lazy"><div class="project-meta"><span>Développement annoncé</span><span>2026</span></div><div class="project-body"><h3>Projet de raffinerie</h3><p>La CBG a publié en août 2026 une nouvelle étape de travail vers la concrétisation du projet de raffinerie. Consultez l'article source pour les informations à jour.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article></div></div></section>
+
+    <section class="engagements-section" id="engagements" aria-labelledby="commitmentsTitle"><div class="container"><div class="engagements-head"><div><p class="kicker kicker-blue"><span class="kicker-index">08</span><span data-i18n="commitments.kicker">Performance responsable</span></p><h2 id="commitmentsTitle"><span data-i18n="commitments.title">Faire plus
+que de la bauxite.</span></h2></div><p data-i18n="commitments.copy">Santé, environnement, communautés et gouvernance : les engagements prennent sens lorsqu’ils sont reliés à des actions et à des documents.</p></div><div class="commitment-grid" id="commitmentGrid"><article class="commitment-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2025/11/slide-cbg-4.webp" alt="Environnement" loading="lazy"><div class="commitment-overlay"><span class="commit-icon">◌</span><h3>Environnement</h3><p>Gestion de l'eau, des émissions, des déchets et réhabilitation : les rapports environnementaux donnent le cadre de suivi des opérations.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article><article class="commitment-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/02/5Y8A3512-1-scaled-1.webp" alt="Communautés" loading="lazy"><div class="commitment-overlay"><span class="commit-icon">＋</span><h3>Communautés</h3><p>Éducation, santé et développement local : les initiatives publiées montrent le rôle des territoires dans la chaîne CBG.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article><article class="commitment-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2025/05/Certificat-ISO-3-scaled-1.jpg" alt="Santé &amp; sécurité" loading="lazy"><div class="commitment-overlay"><span class="commit-icon">△</span><h3>Santé &amp; sécurité</h3><p>Les certifications ISO 45001 et les audits publiés documentent l'exigence de santé et sécurité au travail.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article><article class="commitment-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/08/5Y8A3090-scaled.webp" alt="Gouvernance" loading="lazy"><div class="commitment-overlay"><span class="commit-icon">◎</span><h3>Gouvernance</h3><p>Une information institutionnelle fiable commence par des publications, des sources et des mises à jour clairement identifiées.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire la source ↗</button></div></article></div></div></section>
+
+    <section class="news-section" id="actualites" aria-labelledby="newsTitle"><div class="container"><div class="news-head"><div><p class="kicker kicker-blue"><span class="kicker-index">09</span><span data-i18n="news.kicker">À la une</span></p><h2 id="newsTitle"><span data-i18n="news.title">Ce qui fait
+l'actualité.</span></h2></div><a class="button button-outline-blue" href="#contenu-officiel"><span data-i18n="news.all">Toutes les actualités ↗</span><b>↗</b></a></div><div class="news-grid" id="newsGrid"><article class="news-card featured reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/08/1.webp" alt="Projet de raffinerie CBG : une nouvelle phase décisive" loading="lazy"><div class="news-body"><div class="news-meta"><span>Communiqué de presse</span><time>31 août 2026</time></div><h3>Projet de raffinerie CBG : une nouvelle phase décisive</h3><p>La CBG a tenu les 20 et 21 août 2026 à Paris deux journées de travail consacrées à la suite du projet.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire l'article ↗</button></div></article><article class="news-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/08/5Y8A3090-scaled.webp" alt="Renforcer la réponse au VIH/sida à Kamsar" loading="lazy"><div class="news-body"><div class="news-meta"><span>Communiqué de presse</span><time>18 août 2026</time></div><h3>Renforcer la réponse au VIH/sida à Kamsar</h3><p>Une initiative conjointe de la Chambre des Mines de Guinée et de la CBG publiée en août 2026.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire l'article ↗</button></div></article><article class="news-card reveal"><img src="https://cbg-guinee.com/wp-content/uploads/2026/06/WoMines-105-1-1-scaled.webp" alt="Wo’Mines 2026 : promouvoir le leadership féminin" loading="lazy"><div class="news-body"><div class="news-meta"><span>Communiqué de presse</span><time>24 juin 2026</time></div><h3>Wo’Mines 2026 : promouvoir le leadership féminin</h3><p>La CBG aux côtés de Women in Mining Guinée pour soutenir le leadership féminin dans le secteur minier.</p><button class="source-link" type="button" title="Ouvrir la référence interne">Lire l'article ↗</button></div></article></div></div></section>
+
+    <section class="careers-section" id="carrieres" aria-labelledby="careersTitle"><div class="careers-image"><img src="https://cbg-guinee.com/wp-content/uploads/2026/06/WoMines-105-1-1-scaled.webp" alt="Collaboratrices dans le cadre d'une initiative Women in Mining soutenue par la CBG" loading="lazy"><span>CBG / TALENTS</span></div><div class="container careers-content"><p class="kicker kicker-light"><span class="kicker-index">10</span><span data-i18n="careers.kicker">Talents</span></p><h2 id="careersTitle"><span data-i18n="careers.title">Les compétences
+font la différence.</span></h2><p data-i18n="careers.copy">La CBG publie ses opportunités et ses informations candidats sur ses canaux officiels. Explorez les métiers et les parcours disponibles sans promesse non vérifiée.</p><a class="button button-primary" href="#contenu-officiel"><span data-i18n="careers.link">Voir les opportunités officielles</span><b>↗</b></a></div></section>
+
+    <section class="resources-section" id="publications" aria-labelledby="resourcesTitle"><div class="container resources-layout"><div><p class="kicker kicker-blue"><span class="kicker-index">11</span><span data-i18n="resources.kicker">Centre de ressources</span></p><h2 id="resourcesTitle"><span data-i18n="resources.title">Lire les
+documents.</span></h2></div><div><p class="resources-lead" data-i18n="resources.copy">Rapports, cadres de référence et publications officielles : la meilleure porte d'entrée pour vérifier un chiffre ou comprendre un projet.</p><div class="resource-list" id="resourceList"><article class="resource-row reveal"><span class="resource-type">Rapport environnemental</span><span class="resource-year">2025</span><div class="resource-body"><h3>Environmental and Social Monitoring Report</h3><p>Rapport de suivi environnemental et social, mai 2025.</p></div><button class="source-link" type="button" title="Ouvrir la référence interne">Consulter ↗</button></article><article class="resource-row reveal"><span class="resource-type">Cadre de référence</span><span class="resource-year">2024</span><div class="resource-body"><h3>Resettlement Policy Framework</h3><p>Cadre de politique de réinstallation, version de divulgation de janvier 2024.</p></div><button class="source-link" type="button" title="Ouvrir la référence interne">Consulter ↗</button></article><article class="resource-row reveal"><span class="resource-type">Publication officielle</span><span class="resource-year">2025</span><div class="resource-body"><h3>Maintien des certifications ISO</h3><p>Communication officielle sur les certifications ISO 9001, 14001 et 45001.</p></div><button class="source-link" type="button" title="Ouvrir la référence interne">Consulter ↗</button></article></div><a class="inline-link" href="#contenu-officiel"><span data-i18n="resources.cta">Ouvrir la bibliothèque</span><b>↗</b></a></div></div></section>
+
+    <section class="library-section" id="contenu-officiel" aria-labelledby="libraryTitle"><div class="container library-head"><div><p class="kicker kicker-light"><span class="kicker-index">12</span><span data-i18n="library.kicker">Le site CBG, en un seul endroit</span></p><h2 id="libraryTitle"><span data-i18n="library.title">Tout le contenu officiel.</span></h2></div><p data-i18n="library.copy">Retrouvez ici les contenus publics essentiels du site officiel : opérations, projets, gouvernance, métiers, actualités documentaires et publications. Chaque fiche conserve sa source CBG.</p></div><div class="container library-controls"><div class="library-tabs" role="tablist" aria-label="Contenu CBG"><button class="library-tab active" type="button" role="tab" aria-selected="true" data-library-tab="projects" data-i18n="library.projects">Projets</button><button class="library-tab" type="button" role="tab" aria-selected="false" data-library-tab="operations" data-i18n="library.operations">Opérations</button><button class="library-tab" type="button" role="tab" aria-selected="false" data-library-tab="governance" data-i18n="library.governance">Gouvernance</button><button class="library-tab" type="button" role="tab" aria-selected="false" data-library-tab="careers" data-i18n="library.careers">Carrières</button><button class="library-tab" type="button" role="tab" aria-selected="false" data-library-tab="history" data-i18n="library.history">Histoire</button><button class="library-tab" type="button" role="tab" aria-selected="false" data-library-tab="news" data-i18n="library.news">Actualités</button><button class="library-tab" type="button" role="tab" aria-selected="false" data-library-tab="documents" data-i18n="library.documents">Documents</button></div><label class="library-search"><span data-i18n="library.searchLabel">Rechercher dans le contenu CBG</span><input id="librarySearch" type="search" data-i18n-placeholder="library.searchPlaceholder" placeholder="Projet, rapport, opération…"></label><span class="library-count" id="libraryCount" aria-live="polite">3 résultat(s) affiché(s)</span></div><div class="container official-library-panel" id="officialLibraryPanel"><div class="library-grid"><article class="official-card"><img src="https://cbg-guinee.com/wp-content/uploads/2026/03/DSC09287-1024x683.jpg" alt="Projet d'extension" loading="lazy"><div class="official-card-body"><span class="official-card-meta">2016–2024 · Achevé selon la page officielle</span><h3>Projet d'extension</h3><p>Projet lancé en 2016 pour renforcer la capacité de production, moderniser les infrastructures ferroviaires et portuaires et consolider la position de la CBG sur le marché mondial de la bauxite.</p><button class="text-button" type="button">Voir la fiche complète ↗</button></div></article><article class="official-card"><img src="https://cbg-guinee.com/wp-content/uploads/2025/12/Train-Voyageur-scaled-1.jpg" alt="Projet Multi-User du Chemin de Fer de Boké" loading="lazy"><div class="official-card-body"><span class="official-card-meta">Depuis 2015 · Projet présenté par la CBG</span><h3>Projet Multi-User du Chemin de Fer de Boké</h3><p>Partenariat entre l'ANAIM, la CBG, GAC et COBAD pour une infrastructure ferroviaire partagée, avec une gouvernance organisée autour d'un Comité Technique et d'un Comité des Utilisateurs.</p><button class="text-button" type="button">Voir la fiche complète ↗</button></div></article><article class="official-card"><img src="https://cbg-guinee.com/wp-content/uploads/2026/08/1.webp" alt="Projet de raffinerie" loading="lazy"><div class="official-card-body"><span class="official-card-meta">2026 · Développement annoncé</span><h3>Projet de raffinerie</h3><p>La CBG a publié une nouvelle étape de travail vers la concrétisation d'une future raffinerie, dans une logique de valorisation locale des ressources et d'industrialisation.</p><button class="text-button" type="button">Voir la fiche complète ↗</button></div></article></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle"><div class="container contact-card"><div><p class="kicker kicker-blue"><span class="kicker-index">13</span><span data-i18n="contact.kicker">Point de contact</span></p><h2 id="contactTitle"><span data-i18n="contact.title">Une question
+sur la CBG ?</span></h2></div><div class="contact-details"><p data-i18n="contact.copy">Pour une information institutionnelle à jour, consultez les coordonnées et les canaux publiés par la CBG.</p><div class="contact-facts"><div><span data-i18n="contact.addressLabel">Direction générale</span><strong data-i18n="contact.address">Sise à Kamsar — B.P. 100</strong></div><div><span data-i18n="contact.conakryLabel">Bureau de Conakry</span><strong data-i18n="contact.conakry">2ème étage, Immeuble Serhou Guirassy, Quartier Minière, Commune de Dixinn — B.P. 523</strong></div><div><span data-i18n="contact.phoneLabel">Téléphone</span><a href="tel:+224629006098" data-i18n="contact.phone">(+224) 629 006 098</a></div><div><span data-i18n="contact.emailLabel">Email général</span><a href="mailto:info@cbg-guinee.com" data-i18n="contact.email">info@cbg-guinee.com</a></div></div><div class="contact-locations"><div><span data-i18n="contact.sitesLabel">Implantations documentées</span><strong><span data-i18n="contact.sites">Sangarédi · mine de bauxite
+Kamsar · usine, stockage et port</span></strong></div><p data-i18n="contact.locationNote">Les implantations sont présentées selon les informations publiques de la CBG. Aucune coordonnée GPS non vérifiée n’est affichée.</p></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><img class="footer-logo" src="https://cbg-guinee.com/wp-content/uploads/2025/11/LOGO-BLANC-1-scaled.png" alt="CBG — Compagnie des Bauxites de Guinée"><p data-i18n="footer.tagline">Une chaîne industrielle guinéenne, reliée au monde.</p></div><div class="footer-col"><h3 data-i18n="footer.explore">Explorer</h3><a href="#la-cbg" data-i18n="nav.about">La CBG</a><a href="#operations" data-i18n="nav.operations">Nos opérations</a><a href="#projets" data-i18n="nav.projects">Nos projets</a><a href="#engagements" data-i18n="nav.commitments">Nos engagements</a></div><div class="footer-col"><h3 data-i18n="footer.resources">Ressources</h3><a href="#actualites" data-i18n="nav.news">Actualités</a><a href="#publications" data-i18n="nav.publications">Publications</a><a href="#carrieres" data-i18n="nav.careers">Carrières</a><a href="#contenu-officiel" data-i18n="nav.content">Tout le contenu</a></div><div class="footer-col footer-note"><h3 data-i18n="footer.source">Transparence</h3><p data-i18n="footer.sourceNote">Les faits présentés renvoient aux pages et documents publics de la CBG. Les contenus non vérifiés ne sont pas publiés comme des faits.</p><a href="#contact" data-i18n="footer.contact">Contacter la CBG</a><div class="social-links" aria-labelledby="socialTitle"><h3 id="socialTitle" data-i18n="social.title">Réseaux officiels</h3><div class="social-links-row"><a href="https://www.facebook.com/lacbg.guinee" target="_blank" rel="noopener noreferrer" data-i18n="social.facebook" data-i18n-aria-label="social.facebookLabel" aria-label="Ouvrir la page Facebook officielle de la CBG">Facebook</a><a href="https://www.linkedin.com/company/compagnie-des-bauxite-de-guinee/" target="_blank" rel="noopener noreferrer" data-i18n="social.linkedin" data-i18n-aria-label="social.linkedinLabel" aria-label="Ouvrir la page LinkedIn officielle de la CBG">LinkedIn</a><a href="https://x.com/CBG_Guinee" target="_blank" rel="noopener noreferrer" data-i18n="social.x" data-i18n-aria-label="social.xLabel" aria-label="Ouvrir le compte X officiel de la CBG">X</a><a href="https://www.youtube.com/@compagniedesbauxitesdeguin7345" target="_blank" rel="noopener noreferrer" data-i18n="social.youtube" data-i18n-aria-label="social.youtubeLabel" aria-label="Ouvrir la chaîne YouTube officielle de la CBG">YouTube</a></div></div></div></div><div class="container footer-bottom"><span>© <span id="currentYear">2026</span> CBG</span><span data-i18n="footer.legal">Prototype éditorial — validation institutionnelle requise avant publication</span><a href="#accueil" data-i18n="footer.top">Retour en haut ↑</a></div></footer>
+
+  <button class="ai-fab" id="aiOpen" type="button" aria-controls="aiPanel" aria-expanded="false"><span class="ai-logo-mark"><img src="https://cbg-guinee.com/wp-content/uploads/2025/11/logo-CBG-FINAL.png" alt="Logo CBG"></span><span data-i18n="assistant.button">CBG AI</span><b>↗</b></button>
+  <aside class="ai-panel" id="aiPanel" aria-hidden="true" aria-labelledby="aiTitle"><div class="ai-panel-head"><div class="ai-brandline"><span class="ai-logo-mark large"><img src="https://cbg-guinee.com/wp-content/uploads/2025/11/logo-CBG-FINAL.png" alt="Logo CBG"></span><div><span class="ai-label" data-i18n="assistant.label">Assistant basé sur les sources CBG</span><span class="ai-status"><i aria-hidden="true"></i><span data-i18n="assistant.verified">Sources vérifiées</span></span><h2 id="aiTitle" data-i18n="assistant.title">Que souhaitez-vous vérifier ?</h2></div></div><button class="close-button" id="aiClose" type="button" data-i18n-aria-label="assistant.close" aria-label="Fermer">Fermer</button></div><p class="ai-disclaimer" data-i18n="assistant.disclaimer">Je réponds à partir d'informations publiques vérifiées. Je ne suis pas un représentant humain de la CBG.</p><div class="ai-suggestions" id="aiSuggestions"><button type="button" data-question="Quelle est l'histoire de la CBG ?" data-i18n="assistant.suggestionHistory">Histoire de la CBG</button><button type="button" data-question="Comment fonctionne la chaîne Sangarédi vers Kamsar ?" data-i18n="assistant.suggestionOperations">Chaîne industrielle</button><button type="button" data-question="Quels sont les projets actuels ?" data-i18n="assistant.suggestionProjects">Projets actuels</button><button type="button" data-question="Quels rapports sont disponibles ?" data-i18n="assistant.suggestionReports">Rapports disponibles</button><button type="button" data-question="Quelles opportunités sont publiées ?" data-i18n="assistant.suggestionJobs">Opportunités</button></div><div class="ai-messages" id="aiMessages" aria-live="polite"><div class="message assistant">Bonjour. Je peux vous aider à explorer les informations publiques vérifiées sur la CBG.</div></div><form class="ai-form" id="aiForm"><label class="sr-only" for="aiInput" data-i18n="assistant.placeholder">Votre question</label><input id="aiInput" type="text" autocomplete="off" required="" data-i18n-placeholder="assistant.placeholder" placeholder="Votre question"><button type="submit" data-i18n-aria-label="assistant.send" aria-label="Envoyer">Envoyer <span>↗</span></button></form></aside>
+  <div class="content-modal" id="contentModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contentModalTitle"><div class="content-modal-backdrop" data-modal-close=""></div><div class="content-modal-card"><button class="content-modal-close" type="button" data-modal-close="" data-i18n-aria-label="library.close" aria-label="Fermer la fiche">Fermer</button><div id="contentModalBody"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  
+<script>
+(function() {
+  'use strict';
+
+  // Prevent double-initialization
+  if (window.__miniappPreviewInstrumented) return;
+  window.__miniappPreviewInstrumented = true;
+
+  var MAX_MESSAGE_LENGTH = 2000;
+  var MAX_MESSAGES_PER_ENTRY = 10;
+  var MAX_BUFFER_ENTRIES = 500;
+
+  function generateSessionId() {
+    try {
+      if (window.crypto && window.crypto.getRandomValues) {
+        var bytes = new Uint8Array(16);
+        window.crypto.getRandomValues(bytes);
+        var hex = '';
+        for (var i = 0; i < bytes.length; i++) {
+          var h = bytes[i].toString(16);
+          if (h.length === 1) h = '0' + h;
+          hex += h;
+        }
+        return hex;
+      }
+    } catch (e) {}
+    return String(Date.now()) + '-' + Math.random().toString(16).slice(2);
+  }
+
+  var sessionId = generateSessionId();
+  var seq = 0;
+  var buffer = [];
+  // Set when signalReady() fires; null until then. Ships in the backlog
+  // snapshot so the builder can tell a booted app from a dead shell.
+  var readyAt = null;
+
+  // Boot snapshot computed at backlog-request time: visible text volume and
+  // interactive element count are the hardened boot criteria (an app with a
+  // silent console but ~0 text and 0 interactive elements is a broken shell).
+  function computeSnapshot() {
+    try {
+      return {
+        bodyTextChars: (document.body ? document.body.innerText.trim().length : 0),
+        interactiveCount: document.querySelectorAll('button, a[href], input, select, textarea, [role="button"]').length,
+        readyAt: readyAt
+      };
+    } catch (e) {
+      return { bodyTextChars: 0, interactiveCount: 0, readyAt: readyAt };
+    }
+  }
+
+  function clampBuffer() {
+    if (buffer.length > MAX_BUFFER_ENTRIES) {
+      buffer.splice(0, buffer.length - MAX_BUFFER_ENTRIES);
+    }
+  }
+
+  // Helper to safely stringify and truncate messages
+  function safeStringify(val) {
+    if (val === null) return 'null';
+    if (val === undefined) return 'undefined';
+    if (typeof val === 'string') {
+      return val.length > MAX_MESSAGE_LENGTH
+        ? val.slice(0, MAX_MESSAGE_LENGTH) + '...'
+        : val;
+    }
+    if (typeof val === 'number' || typeof val === 'boolean') {
+      return String(val);
+    }
+    if (val instanceof Error) {
+      return val.stack || val.message || String(val);
+    }
+    try {
+      var str = JSON.stringify(val, null, 2);
+      return str.length > MAX_MESSAGE_LENGTH
+        ? str.slice(0, MAX_MESSAGE_LENGTH) + '...'
+        : str;
+    } catch (e) {
+      try {
+        return String(val);
+      } catch (e2) {
+        return '[Unserializable]';
+      }
+    }
+  }
+
+  function postToParent(payload, targetOrigin) {
+    if (!window.parent || window.parent === window) return;
+    try {
+      window.parent.postMessage(payload, targetOrigin || '*');
+    } catch (e) {
+      // Silently ignore postMessage errors
+    }
+  }
+
+  function record(level, messages, meta) {
+    seq += 1;
+    var entry = {
+      type: 'miniapp-console',
+      sessionId: sessionId,
+      seq: seq,
+      level: level,
+      messages: messages,
+      ts: Date.now()
+    };
+    if (meta && typeof meta === 'object') {
+      entry.meta = meta;
+    }
+    buffer.push(entry);
+    clampBuffer();
+    postToParent(entry, '*');
+  }
+
+  function recordArgs(level, args, meta) {
+    var messages = [];
+    var len = Math.min(args.length, MAX_MESSAGES_PER_ENTRY);
+    for (var i = 0; i < len; i++) {
+      messages.push(safeStringify(args[i]));
+    }
+    if (args.length > MAX_MESSAGES_PER_ENTRY) {
+      messages.push('... and ' + (args.length - MAX_MESSAGES_PER_ENTRY) + ' more');
+    }
+    record(level, messages, meta);
+  }
+
+  // Save original console methods
+  var origLog = console.log;
+  var origWarn = console.warn;
+  var origError = console.error;
+
+  // Override console methods
+  console.log = function() {
+    recordArgs('log', arguments);
+    return origLog.apply(console, arguments);
+  };
+
+  console.warn = function() {
+    recordArgs('warn', arguments);
+    return origWarn.apply(console, arguments);
+  };
+
+  console.error = function() {
+    recordArgs('error', arguments);
+    return origError.apply(console, arguments);
+  };
+
+  function formatResourceTarget(target) {
+    try {
+      if (!target) return null;
+      var tag = (target.tagName || '').toString().toLowerCase();
+      var url = '';
+      if (tag === 'script') url = target.src || '';
+      else if (tag === 'link') url = target.href || '';
+      else if (tag === 'img') url = target.src || '';
+      else if (tag === 'audio' || tag === 'video') url = target.src || '';
+      else url = target.src || target.href || '';
+      return { tag: tag || 'unknown', url: url || '' };
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function onCaptureError(event) {
+    try {
+      // Resource load errors: event.target is the element that failed to load.
+      if (event && event.target && event.target !== window) {
+        var info = formatResourceTarget(event.target);
+        if (info) {
+          record(
+            'error',
+            ['Resource failed to load: ' + info.tag + ' ' + info.url],
+            { kind: 'resource-error', tag: info.tag, url: info.url }
+          );
+          return;
+        }
+      }
+
+      // Some browsers also deliver ErrorEvent objects here.
+      if (event && typeof event.message === 'string') {
+        var message = event.message || 'Unknown error';
+        var source = event.filename || '';
+        var line = event.lineno || 0;
+        var col = event.colno || 0;
+        var stack = event.error && event.error.stack ? event.error.stack : '';
+
+        var errorMsg = message;
+        if (source) {
+          errorMsg += ' at ' + source;
+          if (line) {
+            errorMsg += ':' + line;
+            if (col) errorMsg += ':' + col;
+          }
+        }
+        if (stack && errorMsg.indexOf(stack) === -1) {
+          errorMsg += '\n' + stack;
+        }
+
+        record('error', [errorMsg], {
+          kind: 'js-error-event',
+          filename: source,
+          lineno: line,
+          colno: col
+        });
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  // Capture resource load errors (and some JS errors) in capture phase.
+  window.addEventListener('error', onCaptureError, true);
+
+  // Capture unhandled promise rejections
+  window.addEventListener('unhandledrejection', function(event) {
+    var reason = event.reason;
+    var message = 'Unhandled Promise Rejection: ';
+
+    if (reason instanceof Error) {
+      message += reason.stack || reason.message || String(reason);
+    } else {
+      message += safeStringify(reason);
+    }
+
+    record('error', [message], { kind: 'unhandledrejection' });
+  });
+
+  // Capture CSP violations when supported (JS-only)
+  try {
+    document.addEventListener('securitypolicyviolation', function(event) {
+      try {
+        var violated = event.violatedDirective || event.effectiveDirective || '';
+        var blocked = event.blockedURI || '';
+        var srcFile = event.sourceFile || '';
+        var line = event.lineNumber || 0;
+        var col = event.columnNumber || 0;
+        var sample = event.sample || '';
+        var msg = 'CSP Violation: ' + violated;
+        if (blocked) msg += ' blocked=' + blocked;
+        if (srcFile) {
+          msg += ' at ' + srcFile;
+          if (line) {
+            msg += ':' + line;
+            if (col) msg += ':' + col;
+          }
+        }
+        if (sample) msg += ' sample=' + sample;
+
+        record('error', [msg], {
+          kind: 'csp-violation',
+          violatedDirective: violated,
+          blockedURI: blocked,
+          sourceFile: srcFile,
+          lineNumber: line,
+          columnNumber: col,
+          disposition: event.disposition || ''
+        });
+      } catch (e) {}
+    });
+  } catch (e) {}
+
+  // Worker / SharedWorker error capture (best-effort)
+  function attachWorkerListeners(workerLike, scriptUrl, workerKind) {
+    if (!workerLike || !workerLike.addEventListener) return;
+    try {
+      workerLike.addEventListener('error', function(ev) {
+        try {
+          var msg = ev && ev.message ? String(ev.message) : 'Worker error';
+          var file = ev && ev.filename ? String(ev.filename) : '';
+          var line = ev && ev.lineno ? Number(ev.lineno) : 0;
+          var col = ev && ev.colno ? Number(ev.colno) : 0;
+          var stack = ev && ev.error && ev.error.stack ? String(ev.error.stack) : '';
+
+          var combined = msg;
+          if (file) {
+            combined += ' at ' + file;
+            if (line) {
+              combined += ':' + line;
+              if (col) combined += ':' + col;
+            }
+          }
+          if (stack && combined.indexOf(stack) === -1) {
+            combined += '\n' + stack;
+          }
+
+          record('error', [combined], {
+            kind: 'worker-error',
+            workerKind: workerKind,
+            scriptUrl: scriptUrl || ''
+          });
+        } catch (e) {}
+      });
+
+      workerLike.addEventListener('messageerror', function() {
+        record('error', ['Worker messageerror'], {
+          kind: 'worker-messageerror',
+          workerKind: workerKind,
+          scriptUrl: scriptUrl || ''
+        });
+      });
+    } catch (e) {}
+  }
+
+  var patchedWorkers = { worker: false, sharedworker: false };
+
+  function patchWorkerConstructor(name) {
+    try {
+      if (name === 'Worker' && patchedWorkers.worker) return;
+      if (name === 'SharedWorker' && patchedWorkers.sharedworker) return;
+
+      var Original = window[name];
+      if (typeof Original !== 'function') return;
+
+      function Patched(scriptURL, options) {
+        var instance = new Original(scriptURL, options);
+        try {
+          if (name === 'SharedWorker') {
+            attachWorkerListeners(instance, scriptURL, 'sharedworker');
+            if (instance.port) {
+              attachWorkerListeners(instance.port, scriptURL, 'sharedworker-port');
+            }
+          } else {
+            attachWorkerListeners(instance, scriptURL, 'worker');
+          }
+        } catch (e) {}
+        return instance;
+      }
+
+      Patched.prototype = Original.prototype;
+      try {
+        Object.setPrototypeOf(Patched, Original);
+      } catch (e) {}
+
+      window[name] = Patched;
+
+      if (name === 'Worker') patchedWorkers.worker = true;
+      if (name === 'SharedWorker') patchedWorkers.sharedworker = true;
+    } catch (e) {}
+  }
+
+  patchWorkerConstructor('Worker');
+  patchWorkerConstructor('SharedWorker');
+
+  // Handle screenshot requests from parent
+  var html2canvasPromise = null;
+
+  function ensureHtml2Canvas() {
+    if (typeof html2canvas === 'function') {
+      return Promise.resolve(html2canvas);
+    }
+    if (html2canvasPromise) return html2canvasPromise;
+
+    html2canvasPromise = new Promise(function(resolve, reject) {
+      try {
+        var script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
+        script.async = true;
+        script.onload = function() {
+          if (typeof html2canvas === 'function') {
+            resolve(html2canvas);
+          } else {
+            reject(new Error('html2canvas loaded but not available'));
+          }
+        };
+        script.onerror = function() {
+          reject(new Error('Failed to load html2canvas'));
+        };
+        (document.head || document.documentElement || document.body).appendChild(script);
+      } catch (e) {
+        reject(e);
+      }
+    });
+
+    return html2canvasPromise;
+  }
+
+  window.addEventListener('message', function(event) {
+    // Only respond to parent window
+    if (event.source !== window.parent) return;
+
+    if (event.data && event.data.type === 'miniapp-parent-request-backlog') {
+      try {
+        postToParent({
+          type: 'miniapp-console-backlog',
+          sessionId: sessionId,
+          lastSeq: seq,
+          entries: buffer.slice(0),
+          snapshot: computeSnapshot(),
+          ts: Date.now()
+        }, event.origin || '*');
+      } catch (e) {}
+      return;
+    }
+
+    if (!event.data || event.data.type !== 'request-miniapp-screenshot') return;
+
+    // Check if html2canvas is available
+    // Capture screenshot
+    ensureHtml2Canvas()
+      .then(function() {
+        return html2canvas(document.body, {
+          useCORS: true,
+          allowTaint: true,
+          scale: window.devicePixelRatio || 1,
+          logging: false,
+          backgroundColor: null
+        });
+      })
+      .then(function(canvas) {
+        var dataUrl = canvas.toDataURL('image/png');
+        try {
+          event.source.postMessage({
+            type: 'miniapp-screenshot',
+            imageDataUrl: dataUrl,
+            ts: Date.now()
+          }, event.origin || '*');
+        } catch (e) {
+          try {
+            event.source.postMessage({
+              type: 'miniapp-screenshot-error',
+              error: 'Failed to send screenshot: ' + String(e)
+            }, event.origin || '*');
+          } catch (e2) {}
+        }
+      })
+      .catch(function(err) {
+        try {
+          event.source.postMessage({
+            type: 'miniapp-screenshot-error',
+            error: String(err)
+          }, event.origin || '*');
+        } catch (e) {}
+      });
+  });
+
+  // Signal that the preview is ready
+  function signalReady() {
+    try {
+      readyAt = Math.round(performance.now());
+    } catch (e) {}
+    if (!window.parent || window.parent === window) return;
+    try {
+      window.parent.postMessage({
+        type: 'miniapp-preview-ready',
+        sessionId: sessionId,
+        ts: Date.now()
+      }, '*');
+    } catch (e) {}
+  }
+
+  // Signal ready on DOMContentLoaded or immediately if already loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', signalReady);
+  } else {
+    // DOM already loaded, signal ready after a small delay to ensure scripts have run
+    setTimeout(signalReady, 100);
+  }
+})();
+</script><script src="https://miniapps.ai/sdk/miniapps-ai-v1.js"></script><script src="https://miniapps.ai/sdk/miniapp-i18n-v1.js"></script><script type="module" src="main.js"></script>
+
+</body></html>

@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "status": "editorial-prototype",
+  "sourcePolicy": {
+    "primary": "https://cbg-guinee.com/",
+    "publishOnlyWhen": "verified=true",
+    "mediaRule": "store url, credit, source_url, context and date",
+    "numericRule": "store value, unit, year and source_url together"
+  },
+  "supabasePlan": {
+    "publicRead": "published records only",
+    "adminPath": "/admin",
+    "auth": "Supabase Auth",
+    "rls": "public SELECT for published verified records; admin/editor mutations only",
+    "rag": "ai_knowledge rows filtered by verified=true before model context"
+  },
+  "tables": {
+    "articles": ["id", "title", "slug", "excerpt", "content", "image", "category", "published_at", "updated_at", "status", "verified", "source_url"],
+    "documents": ["id", "title", "description", "category", "year", "file_url", "source_url", "verified", "created_at", "updated_at"],
+    "operations": ["id", "name", "slug", "description", "location", "latitude", "longitude", "image", "gallery", "data", "status", "verified", "source_url", "updated_at"],
+    "projects": ["id", "title", "description", "status", "year", "image", "source_url", "verified", "updated_at"],
+    "jobs": ["id", "title", "department", "location", "contract_type", "description", "requirements", "status", "application_url", "source_url", "updated_at"],
+    "leadership": ["id", "name", "position", "biography", "image", "source_url", "verified", "updated_at"],
+    "statistics": ["id", "name", "value", "unit", "year", "source_url", "verified", "updated_at"],
+    "ai_knowledge": ["id", "title", "content", "category", "source_url", "source_date", "verified", "updated_at"],
+    "media": ["id", "title", "type", "url", "credit", "source_url", "context", "captured_at", "verified", "updated_at"],
+    "sources": ["id", "title", "url", "publisher", "source_date", "retrieved_at", "status", "notes"]
+  },
+  "roles": ["admin", "editor", "reader"],
+  "officialSocialLinks": {
+    "facebook": "https://www.facebook.com/lacbg.guinee",
+    "linkedin": "https://www.linkedin.com/company/compagnie-des-bauxite-de-guinee/",
+    "x": "https://x.com/CBG_Guinee",
+    "youtube": "https://www.youtube.com/@compagniedesbauxitesdeguin7345",
+    "verificationSource": "https://cbg-guinee.com/contacts/",
+    "unlistedAccounts": ["instagram", "tiktok"]
+  },
+  "temporaryIntegrations": {
+    "gemini": {
+      "enabled": true,
+      "clientFile": "gemini.js",
+      "proxyEndpoint": "/api/ai",
+      "expiresAt": "2026-10-31T23:59:59Z",
+      "lifetime": "2 mois maximum",
+      "policy": "Le frontend n'utilise pas l'IA native Miniapps et ne contient aucune clé. gemini.js appelle uniquement le proxy serveur ou la Supabase Edge Function, qui lit GEMINI_API_KEY dans ses secrets."
+    }
+  },
+  "sourceBundle": {
+    "status": "removed",
+    "note": "In-app source download feature has been removed from this build."
+  },
+  "security": "Supabase Auth + Row Level Security; public read only for published verified records"
+}
