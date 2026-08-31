@@ -8,7 +8,7 @@
 //
 // ↓↓↓ Remplace cette URL par celle de ton service Render une fois déployé,
 // ex: 'https://cbg-gemini-proxy.onrender.com/api/ai'
-const PROXY_ENDPOINT = '/api/ai';
+const PROXY_ENDPOINT = 'https://cbg-gemini-proxy.onrender.com/api/ai';
 
 export const GEMINI_CONFIG = Object.freeze({
   provider: 'Google Gemini',
